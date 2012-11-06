@@ -1,0 +1,73 @@
+<%= form_for(@main) do |f| %>
+  <% if @main.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@main.errors.count, "error") %> prohibited this main from being saved:</h2>
+
+      <ul>
+      <% @main.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<p>
+  메일 제목
+</p>
+<table width="700" cellspacing="0" cellpadding="1px" border="0" bgcolor="#FFFFFF" style="border:1px solid #dedede;margin:0px auto 20px auto">
+<tbody><tr><td>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+    <tbody><tr><td style="text-align:center"><a target="_blank" href="http://socg.co.kr/"><img border="0"></a></td></tr>
+    </tbody></table>
+  <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+    <tbody>
+      <tr>
+        <td style="line-height:180%;font-size:16px;padding:0 0 10px 0;color:#444;letter-spacing:-1px;padding:25px">
+          <%= image_tag 'mail1106.jpg' %>
+          </br>
+            정직한 에이전시 ‘<strong>마이다스</strong>’와 함께하는</br>
+            신뢰기반 온라인 캐스팅 허브 ‘<u><span style="letter-spacing:0"><a style="color:#3372a8;text-decoration:none" target="_blank" href="http://AllCast.co.kr">AllCast.co.kr</a></u>’</br>
+          </br>
+            불필요한 프로필 전달과 미팅을 최소화 할 수 있는</br>
+            온라인 프로필 등록을 통해 </br>
+          </br>
+            광고주와 제작자가 직접 프로필을 보고</br>
+            캐스팅까지 결정합니다.</br>
+          </br>
+            <strong>더 이상 기다리지 마세요!</strong></br>
+          </br>
+          <table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+            <tbody><tr><td width="200px" height="28px" style="line-height:28px"><a target="_blank" href="http://allcast.co.kr"><img src="/assets/rails.png" alt="AllCast에 프로필 등록하기"></a></td></tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+    <tbody><tr><td style="font-size:11px;line-height:150%;color:#aaa;letter-spacing:0;font-family:verdana;padding:15px">
+
+        <hr style="min-height:1px;border:1px;background:#ededed">
+
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+        <tbody><tr><td style="font-size:11px;color:#888;letter-spacing:-1px;padding:10px">
+        본 메일은 올캐스트 이용에 대한 안내와 공지를 위한 발송전용메일로 (주)마이더스의 발신허용에 의해 발송되었습니다.<br>
+        </td></tr>
+        </tbody></table>
+        <hr style="min-height:1px;border:1px;background:#ededed">
+
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+        <tbody><tr><td style="font-size:12px;color:#888;padding:10px">
+        올프 <span style="color:#eee">/</span> 대표 양사열 <span style="color:#eee">/</span> 사업자등록번호 229-09-42460<br>
+        서울특별시 강남구 역삼동 707-1 두꺼비빌딩 703호 <span style="color:#eee">/</span> 문의 : <a target="_blank" href="mailto:cs@allcast.co.kr">CS@allcast.co.kr</a> <span style="color:#eee">/</span> Tel : 02-000-0000<br>
+        <span style="letter-spacing:0">Copyright &copy; Allpf Inc. All rights reserved.</span>
+        </td></tr></tbody></table>
+    </td></tr>
+    </tbody></table>
+</td></tr>
+</tbody></table>
+
+<% end %>

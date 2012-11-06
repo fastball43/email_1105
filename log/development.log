@@ -1,0 +1,2326 @@
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 18:48:16 +0900
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (4ms)
+
+
+Started GET "/mains" for 127.0.0.1 at 2012-11-06 18:48:21 +0900
+Processing by MainsController#index as HTML
+Completed 500 Internal Server Error in 44ms
+
+ActiveRecord::StatementInvalid (Could not find table 'mains'):
+  app/controllers/mains_controller.rb:5:in `index'
+
+
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.9ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateMains (20121106094716)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "mains" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121106094716')
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("mains")
+
+
+Started GET "/mains" for 127.0.0.1 at 2012-11-06 18:48:50 +0900
+Connecting to database specified by database.yml
+Processing by MainsController#index as HTML
+  [1m[36mMain Load (0.1ms)[0m  [1mSELECT "mains".* FROM "mains" [0m
+  Rendered mains/index.html.erb within layouts/application (2.0ms)
+Compiled mains.css  (7ms)  (pid 5660)
+Compiled scaffolds.css  (9ms)  (pid 5660)
+Compiled application.css  (30ms)  (pid 5660)
+Compiled jquery.js  (3ms)  (pid 5660)
+Compiled jquery_ujs.js  (0ms)  (pid 5660)
+Compiled mains.js  (60ms)  (pid 5660)
+Compiled application.js  (108ms)  (pid 5660)
+Completed 200 OK in 273ms (Views: 234.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 18:48:51 +0900
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 18:48:51 +0900
+Served asset /mains.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 18:48:51 +0900
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 18:48:51 +0900
+Served asset /jquery.js - 200 OK (19ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 18:48:51 +0900
+Served asset /mains.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 18:48:51 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 18:48:51 +0900
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 18:48:58 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (8.5ms)
+  Rendered mains/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 18:48:58 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 18:48:58 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 18:48:58 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 18:48:58 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 18:48:58 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 18:48:58 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 18:48:58 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/mains" for 127.0.0.1 at 2012-11-06 18:49:01 +0900
+Processing by MainsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0+c5d6FC7fgpvLFqSfBbz1OIKf8BfvW7i034LkIzfBw=", "commit"=>"Create Main"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.4ms)[0m  [1mINSERT INTO "mains" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Tue, 06 Nov 2012 09:49:01 UTC +00:00], ["updated_at", Tue, 06 Nov 2012 09:49:01 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/mains/1
+Completed 302 Found in 10ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/mains/1" for 127.0.0.1 at 2012-11-06 18:49:01 +0900
+Processing by MainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMain Load (0.3ms)[0m  [1mSELECT "mains".* FROM "mains" WHERE "mains"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered mains/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:01 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:01 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:01 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:01 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:01 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:01 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:01 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/mains" for 127.0.0.1 at 2012-11-06 18:49:03 +0900
+Processing by MainsController#index as HTML
+  [1m[35mMain Load (0.2ms)[0m  SELECT "mains".* FROM "mains" 
+  Rendered mains/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:03 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:03 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:03 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:03 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:03 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:03 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:03 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 18:49:05 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.1ms)
+  Rendered mains/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:05 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:05 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:05 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:05 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:05 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:05 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:05 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/mains" for 127.0.0.1 at 2012-11-06 18:49:06 +0900
+Processing by MainsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0+c5d6FC7fgpvLFqSfBbz1OIKf8BfvW7i034LkIzfBw=", "commit"=>"Create Main"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "mains" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Tue, 06 Nov 2012 09:49:06 UTC +00:00], ["updated_at", Tue, 06 Nov 2012 09:49:06 UTC +00:00]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/mains/2
+Completed 302 Found in 3ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/mains/2" for 127.0.0.1 at 2012-11-06 18:49:06 +0900
+Processing by MainsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMain Load (0.1ms)[0m  SELECT "mains".* FROM "mains" WHERE "mains"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered mains/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:06 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:06 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:06 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:06 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:06 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:06 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:06 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/mains" for 127.0.0.1 at 2012-11-06 18:49:07 +0900
+Processing by MainsController#index as HTML
+  [1m[36mMain Load (0.1ms)[0m  [1mSELECT "mains".* FROM "mains" [0m
+  Rendered mains/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:07 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:07 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:07 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:07 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:07 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:07 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:07 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/mains/1" for 127.0.0.1 at 2012-11-06 18:49:15 +0900
+Processing by MainsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMain Load (0.1ms)[0m  SELECT "mains".* FROM "mains" WHERE "mains"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered mains/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:15 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:15 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:15 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:15 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:15 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:15 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:15 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 18:49:21 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (0.9ms)
+  Rendered mains/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:21 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:21 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 18:49:21 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:21 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:21 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:21 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 18:49:21 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 18:51:55 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (12.2ms)
+  Rendered mains/new.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `tag_img' for #<#<Class:0x007fb3ce6ac410>:0x007fb3c8d13200>):
+    16: <p>
+    17:   메일 제목
+    18: </p>
+    19: <%= tag_img() %>
+    20: <p>
+    21:   정직한 에이전시 ‘마이다스’와 함께하는
+    22: 신뢰기반 온라인 캐스팅 허브 ‘AllCast.co.kr’
+  app/views/mains/_form.html.erb:19:in `block in _app_views_mains__form_html_erb___2201219260193445240_70205072121980'
+  app/views/mains/_form.html.erb:1:in `_app_views_mains__form_html_erb___2201219260193445240_70205072121980'
+  app/views/mains/new.html.erb:3:in `_app_views_mains_new_html_erb__3530112933427670416_70205116265260'
+  app/controllers/mains_controller.rb:29:in `new'
+
+
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 18:52:24 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (6.5ms)
+  Rendered mains/new.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined local variable or method `rails' for #<#<Class:0x007fb3ce6ac410>:0x007fb3c9284cc0>):
+    16: <p>
+    17:   메일 제목
+    18: </p>
+    19: <%= tag_img(rails.png) %>
+    20: <p>
+    21:   정직한 에이전시 ‘마이다스’와 함께하는
+    22: 신뢰기반 온라인 캐스팅 허브 ‘AllCast.co.kr’
+  app/views/mains/_form.html.erb:19:in `block in _app_views_mains__form_html_erb___2201219260193445240_70205075210220'
+  app/views/mains/_form.html.erb:1:in `_app_views_mains__form_html_erb___2201219260193445240_70205075210220'
+  app/views/mains/new.html.erb:3:in `_app_views_mains_new_html_erb__3530112933427670416_70205116265260'
+  app/controllers/mains_controller.rb:29:in `new'
+
+
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 18:52:40 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (31.1ms)
+  Rendered mains/new.html.erb within layouts/application (31.7ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (undefined local variable or method `rails' for #<#<Class:0x007fb3ce6ac410>:0x007fb3cb25b5f8>):
+    16: <p>
+    17:   메일 제목
+    18: </p>
+    19: <%= tag_img rails.png %>
+    20: <p>
+    21:   정직한 에이전시 ‘마이다스’와 함께하는
+    22: 신뢰기반 온라인 캐스팅 허브 ‘AllCast.co.kr’
+  app/views/mains/_form.html.erb:19:in `block in _app_views_mains__form_html_erb___2201219260193445240_70205092066700'
+  app/views/mains/_form.html.erb:1:in `_app_views_mains__form_html_erb___2201219260193445240_70205092066700'
+  app/views/mains/new.html.erb:3:in `_app_views_mains_new_html_erb__3530112933427670416_70205116265260'
+  app/controllers/mains_controller.rb:29:in `new'
+
+
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 18:52:47 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (6.9ms)
+  Rendered mains/new.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `tag_img' for #<#<Class:0x007fb3ce6ac410>:0x007fb3ce542228>):
+    16: <p>
+    17:   메일 제목
+    18: </p>
+    19: <%= tag_img 'rails.png' %>
+    20: <p>
+    21:   정직한 에이전시 ‘마이다스’와 함께하는
+    22: 신뢰기반 온라인 캐스팅 허브 ‘AllCast.co.kr’
+  app/views/mains/_form.html.erb:19:in `block in _app_views_mains__form_html_erb___2201219260193445240_70205118656780'
+  app/views/mains/_form.html.erb:1:in `_app_views_mains__form_html_erb___2201219260193445240_70205118656780'
+  app/views/mains/new.html.erb:3:in `_app_views_mains_new_html_erb__3530112933427670416_70205116265260'
+  app/controllers/mains_controller.rb:29:in `new'
+
+
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.9ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 18:53:21 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.5ms)
+  Rendered mains/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 18:53:21 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 18:53:22 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 18:53:22 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 18:53:22 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 18:53:22 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 18:53:22 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 18:53:22 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 18:53:22 +0900
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 18:53:40 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.7ms)
+  Rendered mains/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 18:53:41 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 18:53:41 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 18:53:41 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 18:53:41 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 18:53:41 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 18:53:41 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 18:53:41 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 18:53:41 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 18:54:36 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.8ms)
+  Rendered mains/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 18:54:36 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 18:54:36 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 18:54:36 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 18:54:36 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 18:54:36 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 18:54:36 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 18:54:36 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 18:54:36 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 18:55:04 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.7ms)
+  Rendered mains/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 18:55:04 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 18:55:04 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 18:55:04 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 18:55:04 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 18:55:04 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 18:55:04 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 18:55:04 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 18:55:04 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 18:59:15 +0900
+Processing by MainsController#new as HTML
+ERROR: compiling _app_views_mains__form_html_erb___2201219260193445240_70205070739380 RAISED /Users/parkjinsoo/Documents/ruby/email/app/views/mains/_form.html.erb:22: unknown regexp options - AllCat
+Function body:           def _app_views_mains__form_html_erb___2201219260193445240_70205070739380(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "mains/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@main) do |f| @output_buffer.safe_concat('
+');   if @main.errors.any? 
+@output_buffer.safe_concat('    <div id="error_explanation">
+      <h2>');@output_buffer.append= ( pluralize(@main.errors.count, "error") );@output_buffer.safe_concat(' prohibited this main from being saved:</h2>
+
+      <ul>
+');       @main.errors.full_messages.each do |msg| 
+@output_buffer.safe_concat('        <li>');@output_buffer.append= ( msg );@output_buffer.safe_concat('</li>
+');       end 
+@output_buffer.safe_concat('      </ul>
+    </div>
+');   end 
+@output_buffer.safe_concat('  <div class="actions">
+    ');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+<p>
+  메일 제목
+</p>
+');@output_buffer.append= ( image_tag 'rails.png' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('<p>
+  정직한 에이전시 ‘<strong>마이다스</strong>’와 함께하는</br>
+  신뢰기반 온라인 캐스팅 허브 ‘');@output_buffer.append= ( link_to(“AllCast.co.kr”, “http://AllCast.co.kr”) );@output_buffer.safe_concat('’
+  
+</p>
+<p>
+  불필요한 프로필 전달과 미팅을 최소화 할 수 있는</br>
+  온라인 프로필 등록을 통해
+</p>
+<p>
+  광고주와 제작자가 직접 프로필을 보고</br>
+  캐스팅까지 결정합니다.
+</p>
+<p>
+  <strong>더 이상 기다리지 마세요!</strong>
+</p>
+
+
+
+
+
+
+
+
+
+'); end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:297:in `module_eval'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:297:in `compile'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:232:in `compile!'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:144:in `block in render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:125:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:143:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/Users/parkjinsoo/Documents/ruby/email/app/views/mains/new.html.erb:3:in `_app_views_mains_new_html_erb__3530112933427670416_70205116265260'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:145:in `block in render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:125:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:143:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/parkjinsoo/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activerecord-3.2.8/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/Users/parkjinsoo/Documents/ruby/email/app/controllers/mains_controller.rb:29:in `new'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:414:in `_run__2958475261185124942__process_action__4330342913296525522__callbacks'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activerecord-3.2.8/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/base.rb:121:in `process'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal.rb:246:in `block in action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/cookies.rb:339:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activerecord-3.2.8/lib/active_record/query_cache.rb:64:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activerecord-3.2.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `_run__4204978623295495704__call__3332757820676572624__callbacks'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/parkjinsoo/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/parkjinsoo/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/parkjinsoo/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+  Rendered mains/_form.html.erb (4.9ms)
+  Rendered mains/new.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (/Users/parkjinsoo/Documents/ruby/email/app/views/mains/_form.html.erb:22: unknown regexp options - AllCat):
+    19: <%= image_tag 'rails.png' %>
+    20: <p>
+    21:   정직한 에이전시 ‘<strong>마이다스</strong>’와 함께하는</br>
+    22:   신뢰기반 온라인 캐스팅 허브 ‘<%= link_to(“AllCast.co.kr”, “http://AllCast.co.kr”) %>’
+    23:   
+    24: </p>
+    25: <p>
+  app/views/mains/new.html.erb:3:in `_app_views_mains_new_html_erb__3530112933427670416_70205116265260'
+  app/controllers/mains_controller.rb:29:in `new'
+
+
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (24.6ms)
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.3ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:00:22 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.7ms)
+  Rendered mains/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:00:22 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:00:22 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:00:22 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:00:22 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:00:22 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:00:22 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:00:22 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:00:22 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:08:12 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.3ms)
+  Rendered mains/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:08:12 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:08:12 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:08:12 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:08:12 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:08:12 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:08:12 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:08:12 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:08:12 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:14:48 +0900
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:19:56 +0900
+Processing by MainsController#new as HTML
+ERROR: compiling _app_views_mains__form_html_erb___2201219260193445240_70205095035700 RAISED /Users/parkjinsoo/Documents/ruby/email/app/views/mains/_form.html.erb:104: syntax error, unexpected '<', expecting ')'
+<% end );@output_buffer.safe_concat('
+ ^
+/Users/parkjinsoo/Documents/ruby/email/app/views/mains/_form.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/parkjinsoo/Documents/ruby/email/app/views/mains/_form.html.erb:108: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_mains__form_html_erb___2201219260193445240_70205095035700(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "mains/_form";_old_output_buffer = @output_buffer;form = local_assigns[:form];;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append=  form_for(@main) do |f| @output_buffer.safe_concat('
+');   if @main.errors.any? 
+@output_buffer.safe_concat('    <div id="error_explanation">
+      <h2>');@output_buffer.append= ( pluralize(@main.errors.count, "error") );@output_buffer.safe_concat(' prohibited this main from being saved:</h2>
+
+      <ul>
+');       @main.errors.full_messages.each do |msg| 
+@output_buffer.safe_concat('        <li>');@output_buffer.append= ( msg );@output_buffer.safe_concat('</li>
+');       end 
+@output_buffer.safe_concat('      </ul>
+    </div>
+');   end 
+@output_buffer.safe_concat('  <div class="actions">
+    ');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+<p>
+  메일 제목
+</p>
+<table width="700" cellspacing="0" cellpadding="1px" border="0" bgcolor="#FFFFFF" style="border:1px solid #dedede;margin:0px auto 20px auto">
+<tbody><tr><td>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+    <tbody><tr><td style="text-align:center"><a target="_blank" href="http://socg.co.kr/"><img border="0"></a></td></tr>
+    </tbody></table>
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+
+    <tbody><tr><td style="line-height:180%;font-size:14px;padding:0 0 10px 0;color:#444;letter-spacing:-1px;padding:25px">
+      ');@output_buffer.append= ( image_tag 'rails.png' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        안녕하세요!<br>
+        소시지(<a target="_blank" href="http://socg.co.kr">http://socg.co.kr</a>) 서비스를 운영하는 (주)아이디어포크입니다.<br>
+                    지금까지 사용중이셨던 <u style="color:#3372a8"><a target="_blank" style="color:#3372a8;letter-spacing:0" href="http://facebook.com/258567884242301">밥줘</a> 페이지의 <span style="letter-spacing:0">Enterprise</span>등급의 사용기간이
+            2012년 10월 31일 0시 0분에 종료</u>되어 설치하신 앱의 사용이 중지되었으며, 마이페이지에서 기간연장 혹은 해당 앱을 삭제해 주시면 됩니다.<br>
+                저희 서비스를 아껴주시는 여러분께 감사의 말씀을 드리며 앞으로도 많은 이용 부탁드립니다.<br>
+        <br>
+
+                        만료된 앱
+                    <ul style="padding:0;margin:0 0 0 20px">
+                    <li><a target="_blank" style="color:#3372a8;text-decoration:none;font-size:12px" href="http://www.facebook.com/pages/SoCG/258567884242301?sk=app_414005695319049">이미지이벤트</a></li>
+                    <li><a target="_blank" style="color:#3372a8;text-decoration:none;font-size:12px" href="http://www.facebook.com/pages/SoCG/258567884242301?sk=app_392698480794193">동영상+텍스트이벤트</a></li>
+                    <li><a target="_blank" style="color:#3372a8;text-decoration:none;font-size:12px" href="http://www.facebook.com/pages/SoCG/258567884242301?sk=app_248674315249266">동영상+이미지이벤트</a></li>
+                    <li><a target="_blank" style="color:#3372a8;text-decoration:none;font-size:12px" href="http://www.facebook.com/pages/SoCG/258567884242301?sk=app_415307038511341">로컬이미지이벤트</a></li>
+                    <li><a target="_blank" style="color:#3372a8;text-decoration:none;font-size:12px" href="http://www.facebook.com/pages/SoCG/258567884242301?sk=app_256700977740503">앱 다운로드</a></li>
+                    <li><a target="_blank" style="color:#3372a8;text-decoration:none;font-size:12px" href="http://www.facebook.com/pages/SoCG/258567884242301?sk=app_421112864599063">동영상 이벤트(고급)</a></li>
+                    <li><a target="_blank" style="color:#3372a8;text-decoration:none;font-size:12px" href="http://www.facebook.com/pages/SoCG/258567884242301?sk=app_247991211985659">포토콘테스트</a></li>
+                    <li><a target="_blank" style="color:#3372a8;text-decoration:none;font-size:12px" href="http://www.facebook.com/pages/SoCG/258567884242301?sk=app_323207774426737">멀티 이미지 소개</a></li>
+                    </ul>
+            <br>
+        
+        <table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+        <tbody><tr><td width="118px" height="28px" style="line-height:28px"><a target="_blank" style="font-size:12px;text-decoration:none;color:#111" href="http://socg.co.kr/mypage/tabs">&nbsp;&nbsp;&nbsp;&nbsp;연장하러 가기</a></td></tr>
+        </tbody></table>
+    </td></tr>
+    </tbody></table>
+
+    <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+    <tbody><tr><td style="font-size:11px;line-height:150%;color:#aaa;letter-spacing:0;font-family:verdana;padding:15px">
+
+        <hr style="min-height:1px;border:1px;background:#ededed">
+
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+        <tbody><tr><td style="font-size:11px;color:#888;letter-spacing:-1px;padding:10px">
+        본 메일은 소시지 서비스 이용에 대한 안내와 공지를 위한 발송전용메일로 마이페이지에서 수신허용여부에 상관없이 발송됩니다.<br>
+        </td></tr>
+        </tbody></table>
+        <hr style="min-height:1px;border:1px;background:#ededed">
+
+        <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+        <tbody><tr><td style="font-size:12px;color:#888;padding:10px">
+        (주)아이디어포크 <span style="color:#eee">/</span> 대표 최재석 <span style="color:#eee">/</span> 사업자등록번호 220-88-42451<br>
+        서울특별시 강남구 역삼동 707-1 두꺼비빌딩 703호 <span style="color:#eee">/</span> 문의 : <a target="_blank" href="mailto:help@socg.co.kr">help@socg.co.kr</a> <span style="color:#eee">/</span> Tel : 02-558-0727<br>
+        <span style="letter-spacing:0">Copyright &copy; ideafork Inc. All rights reserved.</span>
+        </td></tr></tbody></table>
+    </td></tr>
+    </tbody></table>
+</td></tr>
+</tbody></table>
+
+
+<div>
+  <p>
+    정직한 에이전시 ‘<strong>마이다스</strong>’와 함께하는</br>
+    신뢰기반 온라인 캐스팅 허브 ‘');@output_buffer.append= ( link_to("AllCast.co.kr", "http://AllCast.co.kr") );@output_buffer.safe_concat('’
+  </p>
+  <p>
+    불필요한 프로필 전달과 미팅을 최소화 할 수 있는</br>
+    온라인 프로필 등록을 통해
+  </p>
+  <p>
+    광고주와 제작자가 직접 프로필을 보고</br>
+    캐스팅까지 결정합니다.
+  </p>
+  <p>
+    <strong>더 이상 기다리지 마세요!</strong>
+  </p>
+</div>
+');@output_buffer.append= ( link_to()
+
+
+
+
+
+
+
+
+<% end );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:297:in `module_eval'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:297:in `compile'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:232:in `compile!'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:144:in `block in render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:125:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:143:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/partial_renderer.rb:265:in `render_partial'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/partial_renderer.rb:238:in `block in render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/partial_renderer.rb:237:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:41:in `render_partial'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/Users/parkjinsoo/Documents/ruby/email/app/views/mains/new.html.erb:3:in `_app_views_mains_new_html_erb__3530112933427670416_70205116265260'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:145:in `block in render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:125:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/template.rb:143:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/template_renderer.rb:18:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_view/renderer/renderer.rb:17:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:110:in `_render_template'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:88:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/parkjinsoo/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activerecord-3.2.8/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/mime_responds.rb:196:in `respond_to'
+/Users/parkjinsoo/Documents/ruby/email/app/controllers/mains_controller.rb:29:in `new'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/base.rb:167:in `process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:414:in `_run__2958475261185124942__process_action__4330342913296525522__callbacks'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `block in instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/notifications.rb:123:in `instrument'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activerecord-3.2.8/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/base.rb:121:in `process'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/abstract_controller/rendering.rb:45:in `process'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal.rb:203:in `dispatch'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_controller/metal.rb:246:in `block in action'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:73:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:36:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/routing/route_set.rb:600:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/cookies.rb:339:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activerecord-3.2.8/lib/active_record/query_cache.rb:64:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activerecord-3.2.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `_run__4204978623295495704__call__3332757820676572624__callbacks'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.8/lib/rails/rack/logger.rb:26:in `call_app'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.8/lib/rails/rack/logger.rb:16:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/activesupport-3.2.8/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/static.rb:62:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.8/lib/rails/engine.rb:479:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.8/lib/rails/application.rb:223:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/railties-3.2.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+/Users/parkjinsoo/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/parkjinsoo/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/parkjinsoo/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+  Rendered mains/_form.html.erb (1.0ms)
+  Rendered mains/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (/Users/parkjinsoo/Documents/ruby/email/app/views/mains/_form.html.erb:104: syntax error, unexpected '<', expecting ')'
+<% end );@output_buffer.safe_concat('
+ ^
+/Users/parkjinsoo/Documents/ruby/email/app/views/mains/_form.html.erb:106: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/parkjinsoo/Documents/ruby/email/app/views/mains/_form.html.erb:108: syntax error, unexpected $end, expecting keyword_end):
+    101: 
+    102: 
+    103: 
+    104: <% end %>
+  app/views/mains/new.html.erb:3:in `_app_views_mains_new_html_erb__3530112933427670416_70205116265260'
+  app/controllers/mains_controller.rb:29:in `new'
+
+
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/parkjinsoo/.rvm/gems/ruby-1.9.2-p320/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.4ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:20:23 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.8ms)
+  Rendered mains/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:20:24 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:20:24 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:20:24 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:20:24 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:20:24 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:20:24 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:20:24 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:20:24 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:20:51 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.8ms)
+  Rendered mains/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:20:51 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:20:51 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:20:51 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:20:51 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:20:51 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:20:51 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:20:51 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:20:51 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:22:47 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.7ms)
+  Rendered mains/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:22:47 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:22:47 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:22:47 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:22:47 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:22:47 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:22:47 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:22:47 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:22:47 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains" for 192.168.0.41 at 2012-11-06 19:24:41 +0900
+Processing by MainsController#index as HTML
+  [1m[36mMain Load (0.2ms)[0m  [1mSELECT "mains".* FROM "mains" [0m
+  Rendered mains/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.41 at 2012-11-06 19:24:41 +0900
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 192.168.0.41 at 2012-11-06 19:24:41 +0900
+Served asset /mains.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.41 at 2012-11-06 19:24:41 +0900
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.41 at 2012-11-06 19:24:41 +0900
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.41 at 2012-11-06 19:24:41 +0900
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 192.168.0.41 at 2012-11-06 19:24:41 +0900
+Served asset /mains.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.41 at 2012-11-06 19:24:41 +0900
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/mains/new" for 192.168.0.41 at 2012-11-06 19:24:45 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.1ms)
+  Rendered mains/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.41 at 2012-11-06 19:24:45 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 192.168.0.41 at 2012-11-06 19:24:45 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.41 at 2012-11-06 19:24:45 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.41 at 2012-11-06 19:24:45 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.41 at 2012-11-06 19:24:45 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 192.168.0.41 at 2012-11-06 19:24:45 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.41 at 2012-11-06 19:24:45 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 192.168.0.41 at 2012-11-06 19:24:45 +0900
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:27:49 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:29:18 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.1ms)
+  Rendered mains/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:29:18 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:29:18 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:29:18 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:29:18 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:29:18 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:29:18 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:29:18 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:29:18 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:29:29 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.0ms)
+  Rendered mains/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:29:29 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:29:29 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:29:29 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:29:29 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:29:29 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:29:29 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:29:29 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:29:29 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:29:37 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.7ms)
+  Rendered mains/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:29:37 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:29:37 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:29:37 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:29:37 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:29:37 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:29:37 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:29:37 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:29:37 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:31:00 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.1ms)
+  Rendered mains/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:31:00 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:31:00 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:31:00 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:31:00 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:31:00 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:31:00 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:31:00 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:31:00 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:32:08 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.1ms)
+  Rendered mains/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:32:08 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:32:08 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:32:08 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:32:08 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:32:08 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:32:08 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:32:08 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:32:08 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:32:31 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.7ms)
+  Rendered mains/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:32:31 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:32:31 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:32:31 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:32:31 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:32:31 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:32:31 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:32:31 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:32:31 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:32:36 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.0ms)
+  Rendered mains/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:32:36 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:32:36 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:32:36 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:32:36 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:32:36 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:32:36 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:32:36 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:32:36 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:33:01 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.0ms)
+  Rendered mains/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:33:01 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:33:01 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:33:01 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:33:01 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:33:01 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:33:01 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:33:01 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:33:01 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:34:00 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.6ms)
+  Rendered mains/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:34:00 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:34:00 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:34:00 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:34:00 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:34:00 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:34:00 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:34:00 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:34:01 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:34:11 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.0ms)
+  Rendered mains/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:34:11 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:34:11 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:34:11 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:34:11 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:34:11 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:34:11 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:34:11 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:34:11 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:34:40 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.1ms)
+  Rendered mains/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:34:40 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:34:40 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:34:40 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:34:40 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:34:40 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:34:40 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:34:40 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:34:40 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 192.168.0.41 at 2012-11-06 19:35:07 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.2ms)
+  Rendered mains/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.41 at 2012-11-06 19:35:07 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 192.168.0.41 at 2012-11-06 19:35:07 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.41 at 2012-11-06 19:35:07 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.41 at 2012-11-06 19:35:07 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.41 at 2012-11-06 19:35:07 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 192.168.0.41 at 2012-11-06 19:35:07 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.41 at 2012-11-06 19:35:07 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 192.168.0.41 at 2012-11-06 19:35:07 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:38:10 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.8ms)
+  Rendered mains/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:38:10 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:38:10 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:38:10 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:38:10 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:38:10 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:38:10 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:38:10 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-06 19:38:10 +0900
+Served asset /mail1106.jpg - 200 OK (4ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:38:33 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.1ms)
+  Rendered mains/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:38:33 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:38:33 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:38:33 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:38:33 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:38:33 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:38:33 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:38:33 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-06 19:38:33 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:40:02 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (0.9ms)
+  Rendered mains/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:40:02 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:40:02 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:40:02 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:40:02 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:40:02 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:40:02 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:40:02 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-06 19:40:02 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:40:11 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.8ms)
+  Rendered mains/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:40:11 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:40:11 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:40:11 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:40:11 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:40:11 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:40:11 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:40:11 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-06 19:40:11 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:41:00 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.6ms)
+  Rendered mains/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:41:00 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:41:00 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:41:00 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:41:00 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:41:00 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:41:00 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:41:00 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-06 19:41:00 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:41:11 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.7ms)
+  Rendered mains/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:41:12 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:41:12 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:41:12 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:41:12 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:41:12 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:41:12 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:41:12 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-06 19:41:12 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:44:56 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.8ms)
+  Rendered mains/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:44:56 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:44:56 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:44:57 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:44:57 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:44:57 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:44:57 +0900
+Served asset /mains.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:44:57 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-06 19:44:57 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:47:48 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.8ms)
+  Rendered mains/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:47:48 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:47:48 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:47:48 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:47:48 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:47:48 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:47:48 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:47:48 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-06 19:47:48 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:48:02 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.8ms)
+  Rendered mains/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:48:02 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:48:02 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:48:02 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:48:02 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:48:02 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:48:02 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:48:02 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-06 19:48:03 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:48:10 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.8ms)
+  Rendered mains/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:48:10 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:48:10 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:48:10 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:48:10 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:48:10 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:48:10 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:48:10 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-06 19:48:11 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:48:11 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-06 19:48:45 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.6ms)
+  Rendered mains/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-06 19:48:45 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-06 19:48:45 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-06 19:48:45 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-06 19:48:45 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-06 19:48:45 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-06 19:48:45 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-06 19:48:45 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-06 19:48:45 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:48:45 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 192.168.0.41 at 2012-11-06 19:49:12 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (0.9ms)
+  Rendered mains/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.41 at 2012-11-06 19:49:12 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 192.168.0.41 at 2012-11-06 19:49:12 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.41 at 2012-11-06 19:49:12 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.41 at 2012-11-06 19:49:12 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.41 at 2012-11-06 19:49:12 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 192.168.0.41 at 2012-11-06 19:49:12 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.41 at 2012-11-06 19:49:12 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 192.168.0.41 at 2012-11-06 19:49:12 +0900
+Served asset /mail1106.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/rails.png" for 192.168.0.41 at 2012-11-06 19:49:12 +0900
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-06 19:56:16 +0900
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-06 19:56:16 +0900
+Served asset /mail1106.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-06 19:58:20 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-06 20:00:21 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
