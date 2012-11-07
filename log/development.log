@@ -2330,3 +2330,1064 @@ Migrating to CreateMains (20121106094716)
   [1m[35m (0.2ms)[0m  select sqlite_version(*)
   [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
   [1m[35m (0.0ms)[0m  PRAGMA index_list("mains")
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-07 17:19:40 +0900
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (2ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:19:47 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (7.3ms)
+  Rendered mains/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 94ms (Views: 51.5ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:19:48 +0900
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:19:48 +0900
+Served asset /mains.css - 200 OK (4ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:19:48 +0900
+Served asset /mains.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:19:48 +0900
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:19:48 +0900
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:19:48 +0900
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:19:48 +0900
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-11-07 17:19:48 +0900
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-07 17:19:48 +0900
+Served asset /mail1106.jpg - 200 OK (1ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:25:05 +0900
+Connecting to database specified by database.yml
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (4.4ms)
+  Rendered mains/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 67ms (Views: 46.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:25:05 +0900
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:25:05 +0900
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:25:05 +0900
+Served asset /jquery.js - 200 OK (20ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:25:06 +0900
+Served asset /submit.png - 200 OK (3ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:26:26 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.2ms)
+  Rendered mains/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:26:26 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:26:26 +0900
+Served asset /mains.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:26:26 +0900
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:26:26 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:26:26 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:26:26 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:26:26 +0900
+Served asset /mains.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-07 17:26:26 +0900
+Served asset /mail1106.jpg - 304 Not Modified (1ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:26:26 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:26:49 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.0ms)
+  Rendered mains/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:26:49 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:26:49 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:26:49 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:26:49 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:26:49 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:26:49 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:26:49 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-07 17:26:49 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:26:49 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:26:55 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.0ms)
+  Rendered mains/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:26:55 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:26:55 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:26:55 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:26:55 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:26:55 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:26:55 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:26:55 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-07 17:26:55 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:26:55 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:31:45 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.3ms)
+  Rendered mains/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:31:46 +0900
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:31:46 +0900
+Served asset /mains.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:31:46 +0900
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:31:46 +0900
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:31:46 +0900
+Served asset /mains.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:31:46 +0900
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:31:46 +0900
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-07 17:31:46 +0900
+Served asset /mail1106.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:31:46 +0900
+Served asset /submit.png - 200 OK (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:33:05 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.8ms)
+  Rendered mains/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:33:05 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:33:05 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:05 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:33:05 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:05 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:05 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:05 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-07 17:33:05 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:33:05 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:33:15 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.1ms)
+  Rendered mains/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:33:15 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:33:15 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:33:15 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:15 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:15 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:15 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:15 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-07 17:33:15 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:33:15 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:33:40 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.6ms)
+  Rendered mains/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:33:40 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:33:40 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:40 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:33:40 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:40 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:40 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:40 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:33:40 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-07 17:33:40 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:33:44 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.9ms)
+  Rendered mains/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 7ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:33:44 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:33:44 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:44 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:44 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:33:44 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:44 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:33:44 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 127.0.0.1 at 2012-11-07 17:33:44 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:33:44 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 192.168.0.41 at 2012-11-07 17:45:36 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.0ms)
+  Rendered mains/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.41 at 2012-11-07 17:45:36 +0900
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 192.168.0.41 at 2012-11-07 17:45:36 +0900
+Served asset /mains.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.41 at 2012-11-07 17:45:36 +0900
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.41 at 2012-11-07 17:45:36 +0900
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.41 at 2012-11-07 17:45:36 +0900
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 192.168.0.41 at 2012-11-07 17:45:36 +0900
+Served asset /mains.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.41 at 2012-11-07 17:45:36 +0900
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 192.168.0.41 at 2012-11-07 17:45:36 +0900
+Served asset /mail1106.jpg - 200 OK (0ms)
+
+
+Started GET "/assets/submit.png" for 192.168.0.41 at 2012-11-07 17:45:36 +0900
+Served asset /submit.png - 200 OK (0ms)
+
+
+Started GET "/mains/new" for 192.168.0.41 at 2012-11-07 17:46:32 +0900
+Processing by MainsController#new as */*
+  Rendered mains/_form.html.erb (2.0ms)
+  Rendered mains/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.41 at 2012-11-07 17:46:32 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.41 at 2012-11-07 17:46:32 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 192.168.0.41 at 2012-11-07 17:46:32 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.41 at 2012-11-07 17:46:32 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 192.168.0.41 at 2012-11-07 17:46:32 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.41 at 2012-11-07 17:46:32 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.41 at 2012-11-07 17:46:32 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 192.168.0.41 at 2012-11-07 17:46:32 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 192.168.0.41 at 2012-11-07 17:46:32 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 192.168.0.41 at 2012-11-07 17:47:13 +0900
+Processing by MainsController#new as */*
+  Rendered mains/_form.html.erb (1.5ms)
+  Rendered mains/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 192.168.0.41 at 2012-11-07 17:47:13 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.41 at 2012-11-07 17:47:13 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.41 at 2012-11-07 17:47:13 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.41 at 2012-11-07 17:47:13 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.41 at 2012-11-07 17:47:13 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.41 at 2012-11-07 17:47:13 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 192.168.0.41 at 2012-11-07 17:47:13 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 192.168.0.41 at 2012-11-07 17:47:13 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 192.168.0.41 at 2012-11-07 17:47:13 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 192.168.0.41 at 2012-11-07 17:47:58 +0900
+Processing by MainsController#new as */*
+  Rendered mains/_form.html.erb (1.7ms)
+  Rendered mains/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.41 at 2012-11-07 17:47:58 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 192.168.0.41 at 2012-11-07 17:47:58 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.41 at 2012-11-07 17:47:58 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.41 at 2012-11-07 17:47:58 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.41 at 2012-11-07 17:47:58 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 192.168.0.41 at 2012-11-07 17:47:58 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.41 at 2012-11-07 17:47:58 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 192.168.0.41 at 2012-11-07 17:47:58 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 192.168.0.41 at 2012-11-07 17:47:58 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 192.168.0.41 at 2012-11-07 17:48:12 +0900
+Processing by MainsController#new as */*
+  Rendered mains/_form.html.erb (1.8ms)
+  Rendered mains/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.41 at 2012-11-07 17:48:12 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 192.168.0.41 at 2012-11-07 17:48:12 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.41 at 2012-11-07 17:48:12 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.41 at 2012-11-07 17:48:12 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 192.168.0.41 at 2012-11-07 17:48:12 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.41 at 2012-11-07 17:48:12 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.41 at 2012-11-07 17:48:12 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail1106.jpg" for 192.168.0.41 at 2012-11-07 17:48:12 +0900
+Served asset /mail1106.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 192.168.0.41 at 2012-11-07 17:48:12 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:53:57 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.0ms)
+  Rendered mains/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:53:57 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:53:57 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:53:57 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:53:57 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:53:57 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:53:57 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:53:57 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail_header_1107.png" for 127.0.0.1 at 2012-11-07 17:53:57 +0900
+Served asset /mail_header_1107.png - 200 OK (5ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:53:57 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:54:33 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.1ms)
+  Rendered mains/new.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:54:34 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:54:34 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:54:34 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:54:34 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:54:34 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:54:34 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:54:34 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail_header_1107.png" for 127.0.0.1 at 2012-11-07 17:54:34 +0900
+Served asset /mail_header_1107.png - 200 OK (3ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:54:34 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:54:57 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.1ms)
+  Rendered mains/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:54:57 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:54:57 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:54:57 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:54:57 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:54:57 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:54:57 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:54:57 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:54:57 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail_header_1107.png" for 127.0.0.1 at 2012-11-07 17:54:57 +0900
+Served asset /mail_header_1107.png - 200 OK (3ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:55:08 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.0ms)
+  Rendered mains/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:55:08 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:55:08 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:55:08 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:55:08 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:55:08 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:55:08 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:55:08 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail_header_1107.png" for 127.0.0.1 at 2012-11-07 17:55:08 +0900
+Served asset /mail_header_1107.png - 200 OK (3ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:55:08 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:55:59 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.1ms)
+  Rendered mains/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:55:59 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:55:59 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:55:59 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:55:59 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:55:59 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:55:59 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:55:59 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail_header_1107.png" for 127.0.0.1 at 2012-11-07 17:55:59 +0900
+Served asset /mail_header_1107.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:55:59 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 17:57:28 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.0ms)
+  Rendered mains/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 17:57:28 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 17:57:28 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 17:57:28 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 17:57:28 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 17:57:28 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 17:57:28 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 17:57:28 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail_header_1107.png" for 127.0.0.1 at 2012-11-07 17:57:28 +0900
+Served asset /mail_header_1107.png - 200 OK (3ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 17:57:28 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 18:00:46 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (2.1ms)
+  Rendered mains/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 18:00:46 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 18:00:46 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 18:00:46 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 18:00:46 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 18:00:46 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 18:00:46 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 18:00:46 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail_header_1107.png" for 127.0.0.1 at 2012-11-07 18:00:46 +0900
+Served asset /mail_header_1107.png - 200 OK (3ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 18:00:46 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 127.0.0.1 at 2012-11-07 18:01:07 +0900
+Processing by MainsController#new as HTML
+  Rendered mains/_form.html.erb (1.0ms)
+  Rendered mains/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 127.0.0.1 at 2012-11-07 18:01:07 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-11-07 18:01:07 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-11-07 18:01:07 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-11-07 18:01:07 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-11-07 18:01:07 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 127.0.0.1 at 2012-11-07 18:01:07 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-11-07 18:01:07 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail_header_1107.png" for 127.0.0.1 at 2012-11-07 18:01:07 +0900
+Served asset /mail_header_1107.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 127.0.0.1 at 2012-11-07 18:01:07 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/mains/new" for 192.168.0.41 at 2012-11-07 18:01:20 +0900
+Processing by MainsController#new as */*
+  Rendered mains/_form.html.erb (0.8ms)
+  Rendered mains/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.41 at 2012-11-07 18:01:20 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 192.168.0.41 at 2012-11-07 18:01:20 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.41 at 2012-11-07 18:01:20 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.41 at 2012-11-07 18:01:20 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.41 at 2012-11-07 18:01:20 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.41 at 2012-11-07 18:01:20 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 192.168.0.41 at 2012-11-07 18:01:20 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 192.168.0.41 at 2012-11-07 18:01:20 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail_header_1107.png" for 192.168.0.41 at 2012-11-07 18:01:20 +0900
+Served asset /mail_header_1107.png - 200 OK (0ms)
+
+
+Started GET "/mains/new" for 192.168.0.41 at 2012-11-07 18:02:22 +0900
+Processing by MainsController#new as */*
+  Rendered mains/_form.html.erb (1.6ms)
+  Rendered mains/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.41 at 2012-11-07 18:02:22 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.css?body=1" for 192.168.0.41 at 2012-11-07 18:02:22 +0900
+Served asset /mains.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.41 at 2012-11-07 18:02:22 +0900
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.41 at 2012-11-07 18:02:22 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mains.js?body=1" for 192.168.0.41 at 2012-11-07 18:02:22 +0900
+Served asset /mains.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.41 at 2012-11-07 18:02:22 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.41 at 2012-11-07 18:02:22 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/mail_header_1107.png" for 192.168.0.41 at 2012-11-07 18:02:22 +0900
+Served asset /mail_header_1107.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/submit.png" for 192.168.0.41 at 2012-11-07 18:02:22 +0900
+Served asset /submit.png - 304 Not Modified (0ms)
